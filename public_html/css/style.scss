@@ -1,26 +1,21 @@
 $slideHeight: 75px;
-$slidePadding: 5px;
 .container.module {
   background: #ddd;
 }
 .clients-slider {
   // the viewbox
+  height: $slideHeight;
   background: #fff;
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto;
   overflow: hidden;
+  position:relative;
   .slider-container {
-    // fixed height, auto width
-    
+    height: $slideHeight;
+    position:absolute;
     &>* { // its children
       display:inline-block;
-    }
-    img {
-      width: auto;
-      height: $slideHeight;
+      padding: 0 10px;
     }
   }
-}
-.wrapped {
-  background: #f00;
 }

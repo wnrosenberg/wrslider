@@ -1,0 +1,16 @@
+.container.module {
+  background: #ddd; }
+
+.clients-slider {
+  height: 75px;
+  background: #fff;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative; }
+  .clients-slider .slider-container {
+    height: 75px;
+    position: absolute; }
+    .clients-slider .slider-container > * {
+      display: inline-block;
+      padding: 0 10px; }
