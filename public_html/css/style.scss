@@ -1,0 +1,26 @@
+$slideHeight: 75px;
+$slidePadding: 5px;
+.container.module {
+  background: #ddd;
+}
+.clients-slider {
+  // the viewbox
+  background: #fff;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  .slider-container {
+    // fixed height, auto width
+    
+    &>* { // its children
+      display:inline-block;
+    }
+    img {
+      width: auto;
+      height: $slideHeight;
+    }
+  }
+}
+.wrapped {
+  background: #f00;
+}
